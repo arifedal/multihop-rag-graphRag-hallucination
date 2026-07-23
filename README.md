@@ -60,7 +60,7 @@ Measured separation between question types:
 | Avg. reasoning steps | 2.00 | 4.01 |
 | Avg. complexity score | 1.97 | 3.90 |
 
-![NLP feature analysis](01-rag-vs-graphrag/results/nlp_analiz_sonuclari.png)
+![NLP feature analysis](rag-vs-graphrag/results/nlp_analiz_sonuclari.png)
 
 ### The two retrieval systems
 
@@ -86,9 +86,9 @@ Broken down by required reasoning steps (only bins with ≥10 samples shown; 2-s
 | 2 | **46.2%** | 36.9% |
 | 4 | 18.5% | **23.0%** |
 
-![RAG vs GraphRAG comparison](01-rag-vs-graphrag/results/rag_vs_graphrag_sonuclar.png)
+![RAG vs GraphRAG comparison](rag-vs-graphrag/results/rag_vs_graphrag_sonuclar.png)
 
-![Accuracy and refusal rate vs reasoning depth](01-rag-vs-graphrag/results/adim_sayisi_vs_performans.png)
+![Accuracy and refusal rate vs reasoning depth](rag-vs-graphrag/results/adim_sayisi_vs_performans.png)
 
 ### Interpretation
 
@@ -139,7 +139,7 @@ Per-class, at 71% accuracy:
 | Correct answer (0) | 0.71 | 0.77 | 0.74 | 53 |
 | Hallucination risk (1) | 0.71 | 0.64 | 0.67 | 47 |
 
-![LoRA classifier results](02-lora-hallucination/results/lora_siniflandirici_sonuclar.png)
+![LoRA classifier results](lora-hallucination/results/lora_siniflandirici_sonuclar.png)
 
 The ablation matters more than the headline number: text alone and features alone both plateau at 0.667, and only their combination improves on it — the two signals are complementary rather than redundant.
 
