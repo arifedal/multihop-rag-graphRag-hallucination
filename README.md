@@ -86,7 +86,7 @@ Broken down by required reasoning steps (only bins with ≥10 samples shown; 2-s
 | 2 | **46.2%** | 36.9% |
 | 4 | 18.5% | **23.0%** |
 
-![RAG vs GraphRAG comparison](rag-vs-graphrag/results/rag_vs_graphrag_sonuclar.png)
+![RAG vs GraphRAG comparison](rag-vs-graphrag/results/rag-vs-graphrag.png)
 
 ![Accuracy and refusal rate vs reasoning depth](rag-vs-graphrag/results/adim_sayisi_vs_performans.png)
 
