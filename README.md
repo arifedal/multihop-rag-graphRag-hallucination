@@ -20,9 +20,16 @@ A two-stage study on **2WikiMultihopQA** examining (1) how graph-structured retr
 
 ```
 .
-├── 01-rag-vs-graphrag/       # NLP pipeline + RAG vs GraphRAG comparison
-├── 02-lora-hallucination/    # LoRA classifier predicting hallucination risk
+├── 01-rag-vs-graphrag/
+│   ├── multihop_nlp_pipeline.ipynb
+│   ├── results/                  # figures produced by the notebook
+│   └── README.md
+├── 02-lora-hallucination/
+│   ├── LoRA_Halusinasyon_Siniflandirma.ipynb
+│   ├── results/
+│   └── README.md
 ├── requirements.txt
+├── .gitignore
 └── README.md
 ```
 
@@ -53,6 +60,8 @@ Measured separation between question types:
 | Avg. reasoning steps | 2.00 | 4.01 |
 | Avg. complexity score | 1.97 | 3.90 |
 
+![NLP feature analysis](01-rag-vs-graphrag/results/nlp_analiz_sonuclari.png)
+
 ### The two retrieval systems
 
 **RAG** — `all-MiniLM-L6-v2` embeddings, cosine similarity, top-3 passages, then Llama-3.1-8B (`temperature=0`) constrained to answer only from context.
@@ -76,6 +85,10 @@ Broken down by required reasoning steps (only bins with ≥10 samples shown; 2-s
 |---|---|---|
 | 2 | **46.2%** | 36.9% |
 | 4 | 18.5% | **23.0%** |
+
+![RAG vs GraphRAG comparison](01-rag-vs-graphrag/results/rag_vs_graphrag_sonuclar.png)
+
+![Accuracy and refusal rate vs reasoning depth](01-rag-vs-graphrag/results/adim_sayisi_vs_performans.png)
 
 ### Interpretation
 
@@ -125,6 +138,8 @@ Per-class, at 71% accuracy:
 |---|---|---|---|---|
 | Correct answer (0) | 0.71 | 0.77 | 0.74 | 53 |
 | Hallucination risk (1) | 0.71 | 0.64 | 0.67 | 47 |
+
+![LoRA classifier results](02-lora-hallucination/results/lora_siniflandirici_sonuclar.png)
 
 The ablation matters more than the headline number: text alone and features alone both plateau at 0.667, and only their combination improves on it — the two signals are complementary rather than redundant.
 
