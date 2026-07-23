@@ -21,6 +21,16 @@ Notebook: `multihop_nlp_pipeline.ipynb`
 
 GraphRAG trades a small amount of overall accuracy for a **3× reduction in refusals** and better performance where multi-hop reasoning is actually required.
 
+![RAG vs GraphRAG](results/rag-vs-graphrag.png)
+
+![Performance vs reasoning depth](results/adim_sayisi_vs_performans.png)
+
+### Dataset and feature analysis
+
+![Dataset analysis](results/veri_seti_analizi.png)
+
+![NLP feature analysis](results/nlp_analiz_sonuclari.png)
+
 ## Outputs
 
 | File | Contents |
