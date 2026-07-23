@@ -20,11 +20,11 @@ A two-stage study on **2WikiMultihopQA** examining (1) how graph-structured retr
 
 ```
 .
-├── 01-rag-vs-graphrag/
+├── rag-vs-graphrag/
 │   ├── multihop_nlp_pipeline.ipynb
 │   ├── results/                  # figures produced by the notebook
 │   └── README.md
-├── 02-lora-hallucination/
+├── lora-hallucination/
 │   ├── LoRA_Halusinasyon_Siniflandirma.ipynb
 │   ├── results/
 │   └── README.md
