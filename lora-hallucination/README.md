@@ -39,6 +39,8 @@ Only **147,456 of 66,510,336 parameters (0.22%)** are updated — the point of L
 
 Overall accuracy 71%.
 
+![LoRA classifier results](results/lora_siniflandirici_sonuclar.png)
+
 ## What the ablation shows
 
 Text alone reaches 0.667. Features alone reach 0.667. Together they reach 0.706 — the signals are complementary, not redundant. That is the main justification for the hybrid architecture.
